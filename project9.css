@@ -1,0 +1,378 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f8fa;
+}
+
+/* header start  */
+
+.blog-card-bottom-image {
+  height: 66px;
+  width: 65px;
+  border-radius: 97px;
+}
+
+header {
+  background-color: rgb(11, 11, 185);
+  display: flex;
+  height: 70vh;
+  padding: 0 90px;
+}
+
+nav {
+  order: 2;
+  margin-left: auto;
+  height: 12vh;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  color: #fff;
+  font-size: 13px;
+}
+
+nav .nav-item {
+  cursor: pointer;
+}
+
+nav .nav-item-active {
+  background-color: #fff;
+  color: rgb(44, 44, 253);
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+header div .logo {
+  order: 1;
+  margin-top: 50px;
+}
+
+header .header-text {
+  position: absolute;
+  margin-top: 180px;
+  color: #ffffff;
+}
+
+header .header-text h2 {
+  font-size: 41px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+header div:last-child {
+  position: absolute;
+  right: 0;
+  width: 640px;
+  height: 500px;
+  top: 90px;
+}
+header div .header-image {
+  width: 100%;
+}
+
+/* companies   */
+
+.companies {
+  display: flex;
+  width: 630px;
+  justify-content: space-between;
+  margin-left: 49px;
+  margin-top: 35px;
+}
+
+.companies .company-items {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  font-family: "Poppins";
+}
+
+/* api start  */
+
+.api {
+  margin-top: 90px;
+  /* max-width: 84rem; */
+  margin-left: 3.4%;
+  margin-right: 6%;
+}
+
+.api .api-heading {
+  font-size: 2.8rem;
+  font-weight: bolder;
+}
+
+.api .cards {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  justify-content: center;
+}
+
+.api .cards .card-active {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px 20px;
+  width: 270px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  color: #552bff;
+}
+.api .cards .card:hover {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px 20px;
+  width: 270px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  cursor: grab;
+}
+
+.api .cards .card {
+  padding: 40px 20px;
+}
+
+.api .cards [class^="card"] h3 {
+  margin-top: 14px;
+}
+.api .cards [class^="card"] p {
+  color: #000000;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.card:last-child::after {
+  content: ">";
+  display: flex;
+  background-color: rgb(31, 0, 209);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  left: 75.5rem;
+  top: 80px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+/* blog start  */
+
+.blog-heading {
+  margin-top: 84px;
+  max-width: 85rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-heading h1 {
+  font-size: 2.8rem;
+  margin-left: 3.8%;
+}
+.blog-cards {
+  max-width: 85rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-top: 24px;
+}
+.blog-card {
+  background-color: #ffffff;
+  margin-right: auto;
+  margin-left: auto;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.04);
+  height: 288px;
+}
+.blog-image {
+  display: inline-block;
+}
+.blog-image img {
+  display: inline-block;
+}
+.blog-content {
+  display: inline-block;
+  vertical-align: top;
+  padding: 30px 90px 0px 50px;
+}
+.blog-content h6 {
+  color: #552bff;
+  font-weight: 900;
+}
+.blog-content h3 {
+  padding-top: 15px;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+.blog-content small {
+  font-weight: bold;
+}
+.blog-bottom {
+  position: absolute;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  left: 320px;
+  bottom: -20px;
+}
+
+div.blog-author {
+  position: absolute;
+  bottom: -20px;
+  left: 390px;
+  bottom: 12px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+/* faq start */
+
+.faq-section {
+  margin-top: 124px;
+  padding: 0 90px;
+  background-color: rgb(255, 83, 189);
+  display: flex;
+  padding-top: 40px;
+  position: relative;
+  height: 390px;
+}
+
+.faq-section .faq-content h2 {
+  font-size: 2.8rem;
+}
+
+.faq-section .faq-content h4 {
+  font-size: 12px;
+  padding-top: 15px;
+}
+
+.faq-section .faq-content h2 ~ h4:not(:first-of-type) {
+  font-size: 1rem;
+  padding-top: 34px;
+}
+
+.faq-section .faq-image {
+  align-self: flex-end;
+  display: flex;
+  position: absolute;
+  right: 0;
+  height: 390px;
+}
+
+.faq-section .faq-content button {
+  border: none;
+  padding: 8px 17px;
+  margin-top: 20px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #552bff;
+}
+
+/* download section start  */
+
+.download-section {
+  display: flex;
+  padding: 0 90px;
+  height: 300px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.download-section .download-content span {
+  font-weight: 100;
+}
+
+.download-section .download-email {
+  position: absolute;
+  right: 0px;
+}
+
+.download-section .download-email form input {
+  outline: none;
+  border: none;
+  background-color: #f8f8fa;
+  padding: 15px 171px 14px 38px;
+  border-radius: 50px;
+  width: 370px;
+}
+
+.download-section .download-email form input::placeholder {
+  font-weight: 600;
+  color: #505050;
+  font-size: 12px;
+}
+
+.download-section .download-email form button {
+  position: relative;
+  right: 140px;
+  background-color: #552bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+
+/* footer start  */
+
+.footer-section {
+  background-color: rgb(255, 83, 189);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 90px;
+  align-items: center;
+  height: 200px;
+}
+
+.footer-logo {
+  margin-left: -43px;
+  cursor: pointer;
+}
+
+.footer-section .footer-left .list {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 13px;
+  padding-top: 20px;
+  margin-left: -40px;
+}
+
+.footer-right:first-child {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.footer-right .footer-logos:not(:last-child) {
+  margin-right: 15px;
+}
+
+.footer-right .logos-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  color: #fff;
+  font-weight: 200;
+  font-size: medium;
+  cursor: pointer;
+}
