@@ -1,31 +1,222 @@
-/* POPPINS FONT FAMILY */
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+}
+
+html{
+  font-size: 102.5%;
+}
+
+
+
+
+
+/* header responsive code  */
+@media(max-width:998px) {
+  html{
+      font-size: 55%;
+  }
+
+  
+}
+
+@media(max-width:75px) {
+  html {
+      font-size: 45%;
+  }
+
+}
+
+@media only screen and (max-width: 1424px) {
+  header div:last-child {
+    width:  31.25rem;
+  }
+}
+@media only screen and (max-width: 1292px) {
+  header .header-text h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 1099px) {
+  header .header-text h2 {
+    font-size: 1.4rem;
+  }
+  header div:last-child {
+    width: 25rem;
+    top:  10.6rem;
+  }
+}
+@media only screen and (max-width: 950px) {
+  header {
+    justify-content: center; 
+    padding: 0rem 1.2rem;
+  }
+  header div:last-child {
+    display: none;
+  }
+  nav {
+    margin-top: 0.6rem;
+    overflow-x: auto;
+  }
+  header div .logo {
+    order: 1;
+    margin-top:  3.1rem;
+    width: 6.25rem;
+    margin-right:  2.5rem;
+  }
+  .header-text {
+    margin-right: 6.25rem;
+    padding: 0rem 1.25rem;
+
+  }
+  nav .nav-item-active {
+    background-color: #FFFFFF;
+    color: #4617fe;
+    padding: .3rem 1.25rem;
+    border-radius: .25rem;
+    min-width:  3.1rem;
+    margin: 0rem 1.25rem 0rem 1.25rem;
+    cursor: pointer;
+  }
+  
+}
+
+@media only screen and (max-width: 1292px) {
+  .companies {
+    justify-content: flex-start;
+    gap:  2.5rem;
+  }
+  .companies .company-items {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 1099px) {
+  .companies .company-items {
+    font-size: 1rem;
+  }
+ }
+@media only screen and (max-width: 950px) {
+  .companies {
+    justify-content: center;
+    margin-left: 0;
+    width: 100%;
+    gap:  1.2rem;
+  }
+
+}
+
+@media only screen and (max-width: 925px) {
+  .card:last-child::after {
+    display: none;
+  }
+  .api {
+    padding: 0rem 1.25rem;
+  }
+  .api .api-heading {
+    font-size: 2.4rem;
+  }
+}
+
+
+
+@media only screen and (max-width: 950px) {
+  .blog-cards {
+    gap:  2.5rem;
+  }
+  .blog-card {
+    height: auto;
+    margin-bottom: 1.25rem;
+  }
+  .blog-image {
+    width:  6.25rem;
+   }
+   .blog-image img {
+    width: 100%;
+   }
+   .blog-content {
+    padding: .6rem 1.8rem 1.25rem 1.8rem;
+   }
+   .blog-bottom {
+    left: 0rem;
+    bottom: -1.25rem;
+  }
+  div.blog-author {
+    left: 0rem;
+    bottom: -2.5rem;
+   }
+   .blog-heading {
+    padding: 0rem 1.2rem;
+   }
+   .blog-heading h1 {
+      font-size: 2.2rem;
+   }
+}
+
+
+
+@media only screen and (max-width: 1256px) {
+  .faq-section .faq-content {
+    position: relative;
+    z-index: 2;
+  }
+  .faq-section .faq-image {
+    opacity: .1;
+    z-index: 1;
+  }
+ }
+ @media only screen and (max-width: 925px) {
+  .faq-section .faq-content h2 {
+    font-size: 2rem;
+    line-height:  2.5rem;
+  
+   }
+   .faq-section {
+    padding:  1.25rem 1.25rem;
+   }
+   .faq-section .faq-content h4 {
+    font-size:  .75rem;
+    padding-top:  .9rem;
+   }
+   .faq-section .faq-content h2 ~ h4:not(:first-of-type) {
+    font-size: 1rem;
+    padding-top: 2.2rem;
+   }
+ }
+
+ 
+@media only screen and (max-width: 1047px) {
+  .download-section .download-email {
+    position: relative;
+  }
+  .download-section {
+    padding: 0rem 0.6rem;
+  }
+  .download-section .download-email form input {
+    display: block;
+    padding: .9rem .6rem .9rem .6rem;
+  }
+  .download-section .download-email form button {
+    display: none;
+  }
 }
 
 body {
   background-color: #f8f8fa;
 }
 
-/* header start  */
 
 .blog-card-bottom-image {
-  height: 66px;
-  width: 65px;
-  border-radius: 97px;
+  height: 4.1rem;
+  width: 4rem;
+  border-radius: 6.1rem;
 }
 
 header {
   background-color: rgb(11, 11, 185);
   display: flex;
   height: 70vh;
-  padding: 0 90px;
+  padding: 0.5rem  .6rem;
 }
 
 nav {
@@ -33,10 +224,10 @@ nav {
   margin-left: auto;
   height: 12vh;
   display: flex;
-  gap: 30px;
+  gap: 1.8rem;
   align-items: center;
   color: #fff;
-  font-size: 13px;
+  font-size: 0.8rem;
 }
 
 nav .nav-item {
@@ -46,34 +237,34 @@ nav .nav-item {
 nav .nav-item-active {
   background-color: #fff;
   color: rgb(44, 44, 253);
-  padding: 5px 10px;
-  border-radius: 4px;
+  padding: 0.3rem .6rem;
+  border-radius: .25rem;
   cursor: pointer;
 }
 
 header div .logo {
   order: 1;
-  margin-top: 50px;
+  margin-top: 3.1rem;
 }
 
 header .header-text {
   position: absolute;
-  margin-top: 180px;
+  margin-top: 11.1rem;
   color: #ffffff;
 }
 
 header .header-text h2 {
-  font-size: 41px;
-  letter-spacing: 2px;
-  margin-bottom: 12px;
+  font-size:  2.5rem;
+  letter-spacing:  .1rem;
+  margin-bottom:  .75rem;
 }
 
 header div:last-child {
   position: absolute;
-  right: 0;
-  width: 640px;
-  height: 500px;
-  top: 90px;
+  right: -0.4rem;
+  width: 40rem;
+  height: 31.1rem;
+  top: 5.6rem;
 }
 header div .header-image {
   width: 100%;
@@ -83,10 +274,10 @@ header div .header-image {
 
 .companies {
   display: flex;
-  width: 630px;
+  width: 39.3rem;
   justify-content: space-between;
-  margin-left: 49px;
-  margin-top: 35px;
+  margin-left: 3rem;
+  margin-top: 2.1rem;
 }
 
 .companies .company-items {
@@ -100,7 +291,7 @@ header div .header-image {
 /* api start  */
 
 .api {
-  margin-top: 90px;
+  margin-top:  5.6rem;
   /* max-width: 84rem; */
   margin-left: 3.4%;
   margin-right: 6%;
@@ -113,41 +304,41 @@ header div .header-image {
 
 .api .cards {
   display: flex;
-  margin-top: 40px;
+  margin-top: 2.5rem;
   align-items: center;
-  gap: 20px;
+  gap: 1.2rem;
   position: relative;
   justify-content: center;
 }
 
 .api .cards .card-active {
   background-color: #fff;
-  border-radius: 10px;
-  padding: 40px 20px;
-  width: 270px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 0.6rem;
+  padding: 2.5rem 1.25rem;
+  width: 16.8rem;
+  box-shadow: 0px 0px .6rem .6rem rgba(0, 0, 0, 0.4);
   color: #552bff;
 }
 .api .cards .card:hover {
   background-color: #fff;
-  border-radius: 10px;
-  padding: 40px 20px;
-  width: 270px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  border-radius:   .6rem;
+  padding: 2.5rem 1.25rem;
+  width: 16.8rem;
+  box-shadow: 0px 0px  .6rem .6rem rgba(0, 0, 0, 0.4);
   cursor: grab;
 }
 
 .api .cards .card {
-  padding: 40px 20px;
+  padding:  2.5rem 1.25rem;
 }
 
 .api .cards [class^="card"] h3 {
-  margin-top: 14px;
+  margin-top: 0.8rem;
 }
 .api .cards [class^="card"] p {
   color: #000000;
-  margin-top: 10px;
-  font-size: 14px;
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
 }
 
 .card:last-child::after {
@@ -155,12 +346,12 @@ header div .header-image {
   display: flex;
   background-color: rgb(31, 0, 209);
   color: #fff;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
+  width:  3.1rem;
+  height: 3.1rem;
+  border-radius: 3.1rem;
   position: absolute;
   left: 75.5rem;
-  top: 80px;
+  top:  5rem;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
@@ -169,10 +360,10 @@ header div .header-image {
 /* blog start  */
 
 .blog-heading {
-  margin-top: 84px;
-  max-width: 85rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 6.25rem;
+  max-width: 6.3rem;
+  margin-left: 4.2rem;
+  margin-right: 5.2rem;
 }
 
 .blog-heading h1 {
@@ -184,19 +375,19 @@ header div .header-image {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 .blog-card {
   background-color: #ffffff;
   margin-right: auto;
   margin-left: auto;
-  border-top-left-radius: 70px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius:  4.3rem;
+  border-bottom-right-radius: .6rem;
+  border-bottom-left-radius: .6rem;
+  border-top-right-radius:  .6rem;
   position: relative;
-  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.04);
-  height: 288px;
+  box-shadow: 0 0 .6rem .3rem rgba(0, 0, 0, 0.04);
+  height: 18rem;
 }
 .blog-image {
   display: inline-block;
@@ -207,16 +398,16 @@ header div .header-image {
 .blog-content {
   display: inline-block;
   vertical-align: top;
-  padding: 30px 90px 0px 50px;
+  padding: 1.8rem 5.6rem 0rem 3.125rem;
 }
 .blog-content h6 {
   color: #552bff;
   font-weight: 900;
 }
 .blog-content h3 {
-  padding-top: 15px;
+  padding-top:  .9rem;
   font-weight: 900;
-  margin-bottom: 14px;
+  margin-bottom:  .8rem;
 }
 .blog-content small {
   font-weight: bold;
@@ -227,32 +418,32 @@ header div .header-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
-  width: 60px;
-  border-radius: 60px;
-  left: 320px;
-  bottom: -20px;
+  height: 3.75rem;
+  width: 3.75rem;
+  border-radius: 3.75rem;
+  left: 20rem;
+  bottom: -1.25rem;
 }
 
 div.blog-author {
   position: absolute;
-  bottom: -20px;
-  left: 390px;
-  bottom: 12px;
-  font-size: 12px;
+  bottom: -1.25rem;
+  left:  24.3rem;
+  bottom: .75rem;
+  font-size:  .75rem;
   font-weight: 900;
 }
 
 /* faq start */
 
 .faq-section {
-  margin-top: 124px;
-  padding: 0 90px;
+  margin-top:  35.7rem;;
+  padding:  0rem 5.6rem;
   background-color: rgb(255, 83, 189);
   display: flex;
-  padding-top: 40px;
+  padding-top:  2.5rem;
   position: relative;
-  height: 390px;
+  height:  24.3rem;
 }
 
 .faq-section .faq-content h2 {
@@ -260,28 +451,28 @@ div.blog-author {
 }
 
 .faq-section .faq-content h4 {
-  font-size: 12px;
-  padding-top: 15px;
+  font-size: .75rem;
+  padding-top: .9rem;
 }
 
 .faq-section .faq-content h2 ~ h4:not(:first-of-type) {
   font-size: 1rem;
-  padding-top: 34px;
+  padding-top:  2.1rem;
 }
 
 .faq-section .faq-image {
   align-self: flex-end;
   display: flex;
   position: absolute;
-  right: 0;
-  height: 390px;
+  right: -204px;
+  height:  24.3rem;
 }
 
 .faq-section .faq-content button {
   border: none;
-  padding: 8px 17px;
-  margin-top: 20px;
-  border-radius: 4px;
+  padding:  0.5rem 1rem;
+  margin-top: 1.25rem;
+  border-radius: .25rem;
   color: #fff;
   background-color: #552bff;
 }
@@ -290,8 +481,8 @@ div.blog-author {
 
 .download-section {
   display: flex;
-  padding: 0 90px;
-  height: 300px;
+  padding: 0 5.6rem;
+  height:  18.75rem;
   background-color: #fff;
   align-items: center;
   justify-content: space-between;
@@ -310,25 +501,25 @@ div.blog-author {
   outline: none;
   border: none;
   background-color: #f8f8fa;
-  padding: 15px 171px 14px 38px;
-  border-radius: 50px;
-  width: 370px;
+  padding: 0.9rem 10.6rem 0.8rem 2.3rem;
+  border-radius:  3.1rem;
+  width:  23.1rem;
 }
 
 .download-section .download-email form input::placeholder {
   font-weight: 600;
   color: #505050;
-  font-size: 12px;
+  font-size:  .75rem;
 }
 
 .download-section .download-email form button {
   position: relative;
-  right: 140px;
+  right: 8.75rem;
   background-color: #552bff;
   color: #ffffff;
   border: none;
-  padding: 10px 30px;
-  border-radius: 50px;
+  padding: 0.6rem 1.8rem;
+  border-radius:  3.1rem;
 }
 
 /* footer start  */
@@ -337,42 +528,42 @@ div.blog-author {
   background-color: rgb(255, 83, 189);
   display: flex;
   justify-content: space-between;
-  padding: 20px 90px;
+  padding: 1.25rem 5.6rem;
   align-items: center;
-  height: 200px;
+  height: 12.5rem;
 }
 
 .footer-logo {
-  margin-left: -43px;
+  margin-left: -2.688rem;
   cursor: pointer;
 }
 
 .footer-section .footer-left .list {
   list-style-type: none;
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
   color: #fff;
   font-weight: lighter;
-  font-size: 13px;
-  padding-top: 20px;
-  margin-left: -40px;
+  font-size: 0.8rem;
+  padding-top: 1.25rem;
+  margin-left: -2.5rem;
 }
 
 .footer-right:first-child {
   text-align: right;
-  margin-bottom: 20px;
+  margin-bottom:  1.25rem;
 }
 
 .footer-right .footer-logos:not(:last-child) {
-  margin-right: 15px;
+  margin-right:  0.9rem;
 }
 
 .footer-right .logos-list {
   list-style-type: none;
   display: flex;
-  gap: 20px;
+  gap:  1.25rem;
   color: #fff;
-  font-weight: 200;
+  font-weight:  12.5rem;
   font-size: medium;
   cursor: pointer;
 }
