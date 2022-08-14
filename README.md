@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-# Prooject 9  
-=======
-# Project 9  
 
+# Project 9  
 
 
 ### LIVE LINK
